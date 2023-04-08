@@ -1,26 +1,43 @@
+html {
+    font-size: 0.9rem;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     text-align: center;
-    font-size: 21px;
-    
+
 }
+
+img {
+    max-width: 90%;
+}
+
+
 
 .container {
     margin: 0 auto;
-    width: 570px;
-
+    padding: 0 2em;
+    max-width: 670px;
 }
 
-header,
 section {
-    padding: 100px 0;
+    padding: 6.25em 0;
+}
+
+header {
+    padding: 3em 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .inverse {
     background-color: #252525;
     color: #fff;
 }
+
+
 
 h1,
 h2 {
@@ -29,27 +46,28 @@ h2 {
 
 }
 h1 {
-    font-size: 60px;
+    font-size: 3.75rem;
 }
 
 h2 {
-    font-size: 42px;
+    font-size: 2.625rem;
     border-top: 1px #c4c4c4 solid;
     border-bottom: 1px #c4c4c4 solid;
-    padding: 30px 0;
+    padding: 0.5em 0;
+    margin-bottom: .5em;
 
 }
 
 h3 {
     font-weight: 900;
-    font-size: 36px;
+    font-size: 2.25rem;
     margin-bottom: 0;
 
 }
 
 .small-text {
-    margin-top: 0;
-    font-size: 16px;
+    margin-top: 0.3125em;
+    font-size: 1rem;
 }
 
 .accent-text {
@@ -61,12 +79,12 @@ h3 {
 
 h1 .accent-text {
     display: block;
-    font-size: 80px;
+    font-size: 5rem;
 }
 
 h2 .accent-text {
     display: block;
-    font-size: 60px;
+    font-size: 3.75rem;
 }
 
 a {
@@ -84,8 +102,8 @@ a:focus {
     text-decoration: none;
     background-color: #99d930 ;
     color: #252525;
-    padding: 10px 25px;
-
+    padding: .625em 1.5625em;
+    margin-top: 1.5625em;
 }
 
 .btn:hover,
@@ -98,4 +116,90 @@ a:focus {
 .articles .btn:focus {
     background-color: #fff;
     color: #252525;
+}
+
+@media (min-width: 700px) {
+    html {
+        font-size: 1.3125rem;
+    }
+}
+
+@media (min-width: 850px) {
+    
+
+    .flex {
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content:space-around;
+        align-items: center;
+
+    }
+
+    .articles {
+        width: 50%;
+        background-color: #99d930;
+        color: #252525;
+    }
+
+    h2 {
+        border-color: #252525;
+    }
+
+    .articles .accent-text {
+        color: #252525;
+    }
+
+    .articles a {
+        color: #252525;
+    }
+
+    .articles a:hover,
+    .articles a:focus {
+        color:#fff;
+    }
+
+    .articles .btn {
+    background-color: #252525;
+    color: #fff;
+    }
+
+    .about-me {
+        width: 50%
+    }
+
+    .portfolio {
+        background-color: #252525;
+        color: white;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .portfolio h2 {
+        border-color: #c4c4c4;
+    }
+
+    .portfolio .container {
+        max-width: 1200px;
+        border: red solid 1px;
+    }
+
+    .portfolio img {
+        width: 100%;
+        height: 15em;
+        object-fit: cover;
+    }
+
+    .work {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .portfolio-item {
+        width: 32%;
+ 
+    }
+
 }
